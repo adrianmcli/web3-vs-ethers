@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ethers } from "ethers";
 
 import artifact from "../build/contracts/Counter.json";
