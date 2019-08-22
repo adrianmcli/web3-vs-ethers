@@ -1,6 +1,6 @@
 # Web3.js vs Ethers.js
 
-A guide to the basic differences between Web3.js and Ethers.js, the two most popular libraries for interacting with the Ethereum blockchain.
+A guide to the basic differences between Web3.js and Ethers.js, the two most popular libraries for interacting with the Ethereum blockchain. And two example frontend apps using React + Hooks!
 
 ---
 
