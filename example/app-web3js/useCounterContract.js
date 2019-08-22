@@ -23,8 +23,8 @@ export default function useCounterContract() {
     // this is only run once on component mounting
     const setup = async () => {
       const web3 = new Web3("http://127.0.0.1:8545");
-      const networkId = await web3.eth.net.getId();
       const accounts = await web3.eth.getAccounts();
+      const networkId = await web3.eth.net.getId();
       const contractAddress = artifact.networks[networkId].address;
 
       // instantiate contract instance and assign to component ref variable
