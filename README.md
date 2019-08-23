@@ -6,7 +6,7 @@ A guide to the basic differences between Web3.js and Ethers.js, the two most pop
 
 ## Sample Dapp Contract
 
-Inside the `example` folder, you will find a simple Truffle project with the following Solidity contract:
+Inside the `smart-contracts` folder, you will find a simple Truffle project with the following Solidity contract:
 
 ```
 pragma solidity ^0.5.0;
@@ -30,12 +30,12 @@ Before you run any of the frontend UIs, make sure to start the development conso
 
 ## Two Frontend UIs
 
-Also inside the `example` folder, there are two folders (`app-ethers` and `app-web3js`) each containing a simple React frontend for the above contract. The only substantial difference between these two UIs is located in the `useCounterContract.js` files.
+There are two folders (`app-ethers` and `app-web3js`) each containing a simple React frontend for the above contract. The only substantial difference between these two UIs is located in the `useCounterContract.js` files.
 
 Here are the direct links for your convenience:
 
-- [Ethers.js App](./example/app-ethers/useCounterContract.js)
-- [Web3.js App](./example/app-web3js/useCounterContract.js)
+- [Ethers.js App](./app-ethers/useCounterContract.js)
+- [Web3.js App](./app-web3js/useCounterContract.js)
 
 ### Running the apps
 
