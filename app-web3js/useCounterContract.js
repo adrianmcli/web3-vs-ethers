@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Web3 from "web3";
 
-import artifact from "../build/contracts/Counter.json";
+import artifact from "../smart-contracts/build/contracts/Counter.json";
 
 export default function useCounterContract() {
   const contract = useRef();
