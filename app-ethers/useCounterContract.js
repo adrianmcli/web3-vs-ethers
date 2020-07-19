@@ -24,8 +24,9 @@ export default function useCounterContract() {
     // this is only run once on component mounting
     const setup = async () => {
       const provider = new ethers.providers.JsonRpcProvider();
-      const network = await provider.getNetwork();
-      const contractAddress = artifact.networks[network.chainId].address;
+      
+      const chainId = Object.keys(artifact.networks)[0];
+      const contractAddress = artifact.networks[chainId].address;
 
       // instantiate contract instance and assign to component ref variable
       contract.current = new ethers.Contract(
@@ -35,7 +36,7 @@ export default function useCounterContract() {
       );
 
       // update count on UI
-      updateCount();
+      await updateCount().catch(e => console.log('UpdateCount Error: ', e.message));;
     };
     setup();
   }, []);
